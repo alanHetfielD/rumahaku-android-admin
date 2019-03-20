@@ -19,9 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Cari Ternak"
+            android:hint="Cari"
             android:inputType="textPersonName" />
-
         <Button
             android:id="@+id/buttonCari"
             android:layout_width="wrap_content"
