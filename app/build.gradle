@@ -18,6 +18,7 @@ android {
         buildConfigField "String", "STORE_IMAGE", "\"http://rumahaku.madukubah.com/upload/store/\""
         buildConfigField "String", "ITEM_IMAGE", "\"http://rumahaku.madukubah.com/upload/item/\""
         buildConfigField "String", "ADS_IMAGE", "\"http://rumahaku.madukubah.com/upload/iklan/\""
+        buildConfigField "String", "USER_IMAGE", "\"http://rumahaku.madukubah.com/upload/user/\""
     }
     buildTypes {
         release {

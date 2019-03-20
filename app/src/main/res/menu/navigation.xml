@@ -10,8 +10,8 @@
         android:icon="@drawable/ic_search"
         android:title="@string/cari" />
 
-    <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_person_pin_white_24dp"
-        android:title="@string/profil" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_profile"-->
+        <!--android:icon="@drawable/ic_person_pin_white_24dp"-->
+        <!--android:title="@string/profil" />-->
 </menu>

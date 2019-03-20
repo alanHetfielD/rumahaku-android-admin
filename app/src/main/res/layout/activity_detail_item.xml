@@ -37,15 +37,6 @@
                     android:text="@string/_735"
                     android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:layout_marginBottom="8dp"/>
-
-                <!--<Button-->
-                <!--android:id="@+id/btn_simpan"-->
-                <!--style="@style/ButtonSimpan"-->
-                <!--android:layout_marginTop="8dp"-->
-                <!--android:layout_marginBottom="8dp"-->
-                <!--android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
-                <!--android:text="@string/simpan"-->
-                <!--android:layout_marginRight="@dimen/activity_horizontal_margin" />-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,26 +50,20 @@
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     android:layout_weight="1"
                     />
-                <!--<TextView-->
-                <!--android:id="@+id/tv_has_been_seen"-->
-                <!--style="@style/TextContent.Subtitle"-->
-                <!--android:text="@string/stock_hanya_5_buah"-->
-                <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
-                <!--android:layout_weight="1"-->
-                <!--android:textAlignment="viewEnd"-->
-                <!--android:gravity="end" />-->
             </LinearLayout>
-            <!--<TextView-->
-            <!--style="@style/TextContent"-->
-            <!--android:text="@string/content_text"-->
-            <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
-            <!--android:lineSpacingMultiplier="1"-->
-            <!--android:textColor="@android:color/black"/>-->
+
             <TextView
                 style="@style/TextContent.Subtitle"
                 android:text="@string/spesifikasi"
                 android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tv_item_description"
+                style="@style/TextSpec.Value"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/f_umum_desc"/>
+
             <TableLayout
+                android:id="@+id/item_facility_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -96,18 +81,18 @@
                         style="@style/TextSpec.Value"
                         android:text="@string/f_umum_desc"/>
                 </TableRow>
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
-                    <TextView
-                        style="@style/TextSpec.Field"
-                        android:text="@string/size"/>
-                    <TextView
-                        android:id="@+id/tv_size"
-                        style="@style/TextSpec.Value"
-                        android:text="@string/content_specs_size"/>
-                </TableRow>
+                <!--<TableRow-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp">-->
+                    <!--<TextView-->
+                        <!--style="@style/TextSpec.Field"-->
+                        <!--android:text="@string/size"/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_size"-->
+                        <!--style="@style/TextSpec.Value"-->
+                        <!--android:text="@string/content_specs_size"/>-->
+                <!--</TableRow>-->
             </TableLayout>
             <TextView
                 style="@style/TextContent.Subtitle"

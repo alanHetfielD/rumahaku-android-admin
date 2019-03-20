@@ -2,8 +2,10 @@ package com.madukubah.rumahaku.view.activity.item
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import com.madukubah.rumahaku.R
+import com.madukubah.rumahaku.config.GridItemDecoration
 import com.madukubah.rumahaku.config.invisible
 import com.madukubah.rumahaku.config.visible
 import com.madukubah.rumahaku.model.Category
@@ -54,9 +56,11 @@ class ItemActivity
         presenter = ItemPresenterAnko(this, this)
         presenter.start()
 
-        rv_items.layoutManager = LinearLayoutManager(this)
+//        rv_items.layoutManager = LinearLayoutManager(this)
+        rv_items.layoutManager = GridLayoutManager(this, 2)
         rv_items.adapter = presenter.adapter
         rv_items.isNestedScrollingEnabled = false
+        rv_items.addItemDecoration( GridItemDecoration( resources.getDimensionPixelSize(R.dimen._2sdp) , 2 ) )
 
         category = intent.getParcelableExtra( CATEGORY )
         if( category != null )

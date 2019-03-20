@@ -5,9 +5,9 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 
 data class Item (
-        @SerializedName("item_id") val item_id : Long,
+        @SerializedName("item_id") val item_id : Int,
         @SerializedName("item_name") val item_name : String,
-        @SerializedName("item_price") val item_price : Long,
+        @SerializedName("item_price") val item_price : Int,
         @SerializedName("item_description") val item_description : String,
         @SerializedName("item_images") val item_images : String,
         @SerializedName("item_facility") val item_facility : String,
@@ -19,31 +19,31 @@ data class Item (
         @SerializedName("store_name") val store_name : String,
         @SerializedName("store_address") val store_address : String,
 
-        @SerializedName("store_id") val store_id : Long,
-        @SerializedName("category_id") val category_id : Long,
+        @SerializedName("store_id") val store_id : Int,
+        @SerializedName("category_id") val category_id : Int,
         @SerializedName("create_date") val create_date : String
 ):Parcelable {
     constructor(parcel: Parcel) : this(
-            parcel.readLong(),
+            parcel.readInt(),
             parcel.readString(),
-            parcel.readLong(),
-            parcel.readString(),
-            parcel.readString(),
+            parcel.readInt(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
-            parcel.readLong(),
-            parcel.readLong(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readInt(),
+            parcel.readInt(),
             parcel.readString()) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeLong(item_id)
+        parcel.writeInt(item_id)
         parcel.writeString(item_name)
-        parcel.writeLong(item_price)
+        parcel.writeInt(item_price)
         parcel.writeString(item_description)
         parcel.writeString(item_images)
         parcel.writeString(item_facility)
@@ -52,8 +52,8 @@ data class Item (
         parcel.writeString(user_profile_phone)
         parcel.writeString(store_name)
         parcel.writeString(store_address)
-        parcel.writeLong(store_id)
-        parcel.writeLong(category_id)
+        parcel.writeInt(store_id)
+        parcel.writeInt(category_id)
         parcel.writeString(create_date)
     }
 

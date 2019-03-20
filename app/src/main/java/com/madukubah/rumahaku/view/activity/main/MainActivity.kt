@@ -25,16 +25,16 @@ class MainActivity
         val manager = supportFragmentManager.beginTransaction()
         var fragment : Fragment?= null
         val id = item.itemId
-        when(id){
+        when( id ){
             R.id.navigation_menu->{
                 fragment = MenuFragment.newInstance()
             }
             R.id.navigation_cari->{
                 fragment = SearchFragment.newInstance()
             }
-            R.id.navigation_profile ->{
-                fragment = ProfileFragment.newInstance()
-            }
+//            R.id.navigation_profile ->{
+//                fragment = ProfileFragment.newInstance()
+//            }
         }
         val ft = supportFragmentManager.beginTransaction()
         ft.replace( R.id.frame, fragment )
