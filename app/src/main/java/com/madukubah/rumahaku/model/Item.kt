@@ -10,6 +10,7 @@ data class Item (
         @SerializedName("item_price") val item_price : Long,
         @SerializedName("item_description") val item_description : String,
         @SerializedName("item_images") val item_images : String,
+        @SerializedName("item_facility") val item_facility : String,
 
         @SerializedName("user_profile_fullname") val user_profile_fullname : String,
         @SerializedName("user_profile_image_path") val user_profile_image_path : String,
@@ -33,6 +34,7 @@ data class Item (
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
+            parcel.readString(),
             parcel.readLong(),
             parcel.readLong(),
             parcel.readString()) {
@@ -44,6 +46,7 @@ data class Item (
         parcel.writeLong(item_price)
         parcel.writeString(item_description)
         parcel.writeString(item_images)
+        parcel.writeString(item_facility)
         parcel.writeString(user_profile_fullname)
         parcel.writeString(user_profile_image_path)
         parcel.writeString(user_profile_phone)
