@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.madukubah.rumahakuadmin.R
+import com.madukubah.rumahakuadmin.view.activity.login.LgnActivity
 import com.madukubah.rumahakuadmin.view.activity.main.MainActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -24,7 +25,7 @@ class SplashScreenActivity : AppCompatActivity() {
     internal val mRunnable: Runnable = Runnable {
         if (!isFinishing) {
 
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, LgnActivity::class.java)
             startActivity(intent)
             finish()
         }

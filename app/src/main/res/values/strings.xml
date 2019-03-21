@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rumah Aku</string>
+    <string name="app_name">Admin Rumah Aku</string>
 
     <string name="hello_blank_fragment">Hello Kost fragment</string>
     <string name="nama_kost">nama kost</string>
@@ -53,4 +53,9 @@
     <string name="_10_tahun">10 Tahun</string>
     <string name="alan_peternakan_yuhu">Alan ( Peternakan Yuhu )</string>
     <string name="jln_mutiara">Jln mutiara</string>
+    <string name="pesan">Pesan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
 </resources>

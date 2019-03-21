@@ -13,16 +13,17 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".view.activity.splashscreen.SplashScreenActivity"
-            android:theme="@style/AppTheme.NoTitleBar"
-            >
+            android:theme="@style/AppTheme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.item.ItemActivity" />
         <activity android:name=".view.activity.detail.DetailItemActivity" />
-        <activity android:name=".view.activity.main.MainActivity"></activity>
+        <activity android:name=".view.activity.main.MainActivity" />
+        <activity android:name=".view.activity.login.LgnActivity"></activity>
     </application>
 
 </manifest>
